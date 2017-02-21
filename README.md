@@ -9,4 +9,4 @@ color=green
 echo ${!color}
 beautiful color
 
-
+http://www.ruanyifeng.com/blog/2007/07/english_punctuation.html  punctuation english
