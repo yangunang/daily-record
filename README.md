@@ -3,3 +3,10 @@ when linux use -- (a double dash) after command,it means tells commnad  not to t
 exmaple cat -- -a it's cat file -a content
 
 ssh -vvv display the connection is so slow, change the /etc/ssh/sshd_config    UseDNS no
+
+green='beautiful color'
+color=green
+echo ${!color}
+beautiful color
+
+
