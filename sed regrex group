@@ -1,0 +1,15 @@
+we have many files  This files named: 
+800A80600614$20170612030132351-000012504@ExtraBill.zip?Expires=4652881335&OSSAccessKeyId=LTAI9sKPmPBDy4Z3&Signature=153g6FSqk7N3CAMtnkfm074xBwc
+800A80600614$20170612030105428-000013823@OCR@BillErr2.zip?Expires=4652881272&OSSAccessKeyId=LTAI9sKPmPBDy4Z3&Signature=Nzv1eosBvGBN+wwKqQWPdJK8nlg=
+
+Than we use sed replace the name file to new name
+
+cat replace.sh 
+
+#!/bin/bash
+for f in 800*
+do
+   newname=`echo $f | sed 's/\(^800.*zip\)\(\?.*$\)/\1/'`   #sed regex group 
+   echo $newname
+   mv --  $f $newname
+done
